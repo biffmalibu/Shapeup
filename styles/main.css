@@ -27,8 +27,13 @@ header h2 {
     text-shadow: 5px 5px 12px steelblue;
 }
 #logoimage {
-    float: left;
-    margin-right: 15px;
+    float: none;
+    padding: .5em;
+    display: block;
+}
+header img, header h2, header h3 {
+    margin: 0 auto;
+    text-align: center;
 }
 /*Horizontal inline navigation menu*/
 /*
@@ -206,6 +211,44 @@ footer p {
     font-weight: bold;
     text-align: center;
     font-variant: small-caps;
+}
+#mobilemenu {
+    display: none;
+}
+@media only screen and (max-width: 900px) {
+    body {
+        box-shadow: none;
+        font-size: 90%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    #nav_menu {
+        display: none;
+    }
+    #mobilemenu {
+        display: block;
+    }
+    .slicknav_menu {
+        background-color: steelblue !important;
+    }
+    header h2 {
+        font-size: 200%;
+    }
+    section, aside {
+        float: none;
+        width: 100%;
+        margin: 0;
+        padding: .5em;
+    }
+    #logoimage {
+        float: none;
+        padding: .5em;
+        display: block;
+        margin: 0 auto;
+    }
+    header h2, header h3 {
+        text-align: center;
+    }
 }
         
     
